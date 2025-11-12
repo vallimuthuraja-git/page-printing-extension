@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Printing Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Full-width Header -->
+        <header>
+            <div class="header-glow"></div>
+            <div class="header-content">
+                <div class="header-brand">
+                    <div class="brand-logo">
+                        <span class="logo-emoji">🚀</span>
+                    </div>
+                    <div class="brand-text">
+                        <h1>Page Printing</h1>
+                        <p class="brand-subtitle">✨ Powerful Data Processor</p>
+                    </div>
+                </div>
+                <nav id="navbar" class="navbar header-nav hidden">
+                    <ul class="navbar-menu">
+                        <li><a href="#" data-section="userInfoSection" class="nav-item active">
+                            <span class="nav-icon">🏠</span>
+                            <span class="nav-text">Dashboard</span>
+                        </a></li>
+                        <li><a href="#" data-section="uploadSection" class="nav-item">
+                            <span class="nav-icon">📁</span>
+                            <span class="nav-text">Upload</span>
+                        </a></li>
+                        <li><a href="#" data-section="progressSection" class="nav-item">
+                            <span class="nav-icon">⚡</span>
+                            <span class="nav-text">Progress</span>
+                        </a></li>
+                        <li><a href="#" data-section="resultsSection" class="nav-item">
+                            <span class="nav-icon">🎉</span>
+                            <span class="nav-text">Results</span>
+                        </a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button id="themeToggle" class="btn-theme-toggle" title="Toggle Dark Mode">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <div class="header-status">
+                        <div class="status-dot" id="connectionStatus"></div>
+                        <span class="status-text">Connected</span>
+                    </div>
+                    <div class="header-token-timer">
+                        <span class="token-timer-label">Token Expires:</span>
+                        <span class="token-timer-countdown" id="headerTokenCountdown">00:00:00</span>
+                    </div>
+                    <div class="profile-menu">
+                        <button id="profileBtn" class="btn-profile" title="User Profile">
+                            <span class="profile-icon">👤</span>
+                            <span class="profile-name" id="headerUserName">User</span>
+                        </button>
+                        <div id="profileDropdown" class="profile-dropdown hidden">
+                            <div class="profile-header">
+                                <div class="profile-avatar">
+                                    <span class="avatar-icon">👤</span>
+                                </div>
+                                <div class="profile-info">
+                                    <div class="profile-display-name" id="dropdownDisplayName">Display Name</div>
+                                    <div class="profile-user-id" id="dropdownUserId">user@example.com</div>
+                                    <div class="profile-role" id="dropdownUserRole">Role</div>
+                                </div>
+                            </div>
+                            <div class="profile-menu-divider"></div>
+                            <div class="profile-menu-items">
+                                <button class="profile-menu-item" id="settingsBtn">
+                                    <span class="menu-icon">⚙️</span>
+                                    <span class="menu-text">Settings</span>
+                                </button>
+                                <button class="profile-menu-item" id="logoutFromHeaderBtn">
+                                    <span class="menu-icon">🚪</span>
+                                    <span class="menu-text">Logout</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-decoration">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content with Sidebar -->
+        <div class="main-content-with-sidebar">
+            <!-- Integrated Sidebar (Always on Right) -->
+            <div class="integrated-sidebar" id="integratedSidebar">
+                <!-- Token Information -->
+                <div class="token-info-section">
+                    <h3>Authentication Status</h3>
+                    <div class="token-info">
+                        <div class="token-status" id="tokenStatus">
+                            <div class="token-timer">
+                                <span class="timer-label">Token Expires In:</span>
+                                <span class="timer-countdown" id="tokenCountdown">00:00:00</span>
+                            </div>
+                            <div class="refresh-timer">
+                                <span class="timer-label">Refresh Token Expiry:</span>
+                                <span class="refresh-countdown" id="refreshTokenCountdown">00:00:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Info Panel -->
+                <div class="user-info-panel" id="userInfoPanel">
+                    <!-- User details will be populated here -->
+                </div>
+            </div>
+
+            <div class="main-content">
+        <!-- Login Section -->
+        <section id="loginSection" class="section">
+            <h2>Authentication</h2>
+            <form id="loginForm" class="form-container">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required
+                           placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <div class="password-input-container">
+                        <input type="password" id="password" name="password" required
+                               placeholder="Enter your password">
+                        <button type="button" id="togglePassword" class="password-toggle" title="Show password">
+                            👁️
+                        </button>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary">Login</button>
+            </form>
+            <div id="loginStatus" class="status-message"></div>
+        </section>
+
+        <!-- User Info Section -->
+        <section id="userInfoSection" class="section hidden">
+            <h2>Dashboard Overview</h2>
+            <div class="dashboard-content">
+                <!-- Main dashboard content can go here -->
+                <div class="welcome-card">
+                    <h3>Welcome to Page Printing Dashboard</h3>
+                    <p>Manage your files, view user configurations, and monitor your authentication status.</p>
+                </div>
+
+                <!-- Available Features -->
+                <div class="user-actions-card">
+                    <h3>Available Features</h3>
+                    <div class="user-actions-grid">
+                        <button class="btn-primary" id="navigateUploadBtn">
+                            📁 Upload Excel Files
+                            <small>Load site configurations</small>
+                        </button>
+                        <button class="btn-secondary" id="navigateUsersBtn">
+                            👥 View Users by Site ID
+                            <small>Get user details and configurations</small>
+                        </button>
+                        <button class="btn-secondary" id="logoutFromDashboardBtn">
+                            🚪 Logout
+                            <small>Sign out and clear session</small>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- File Upload Section -->
+        <section id="uploadSection" class="section hidden">
+            <h2>Upload Excel File</h2>
+            <div class="upload-container">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-content">
+                        <svg class="upload-icon" width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" fill="currentColor"/>
+                        </svg>
+                        <p>Drag and drop your Excel file here, or click to browse</p>
+                        <input type="file" id="fileInput" accept=".xlsx,.xls" hidden>
+                        <button id="browseBtn" class="btn-secondary">Browse Files</button>
+                    </div>
+                </div>
+                <div id="fileInfo" class="file-info hidden">
+                    <div class="file-details">
+                        <span id="fileName"></span>
+                        <span id="fileSize"></span>
+                    </div>
+                    <button id="uploadBtn" class="btn-primary">Upload & Process</button>
+                    <button id="cancelUpload" class="btn-secondary">Cancel</button>
+                </div>
+            </div>
+            <div id="uploadStatus" class="status-message"></div>
+
+            <h3>View Users by Site ID</h3>
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="siteId">Site ID:</label>
+                    <input type="text" id="siteId" placeholder="Enter site ID (e.g., 21312)">
+                    <button id="viewUsersBtn" class="btn-secondary">View Users</button>
+                </div>
+            </div>
+            <div id="usersStatus" class="status-message"></div>
+            <div id="usersContainer" class="results-container"></div>
+        </section>
+
+        <!-- Progress Section -->
+        <section id="progressSection" class="section hidden">
+            <h2>Processing Status</h2>
+            <div class="progress-container">
+                <div class="progress-step" id="step1">
+                    <div class="step-indicator pending">1</div>
+                    <div class="step-content">
+                        <h3>File Upload</h3>
+                        <p>Uploading Excel file to server...</p>
+                    </div>
+                </div>
+                <div class="progress-step" id="step2">
+                    <div class="step-indicator pending">2</div>
+                    <div class="step-content">
+                        <h3>Publishing</h3>
+                        <p>Publishing to gatherer service...</p>
+                        <div class="publish-container">
+                            <button id="publishBtn" class="btn-primary btn-inline hidden">📤 Publish to Gatherer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="overallStatus" class="status-message"></div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="resultsSection" class="section hidden">
+            <h2>Results</h2>
+            <div id="resultsContainer" class="results-container">
+                <!-- Results will be displayed here -->
+            </div>
+        </section>
+            </div> <!-- End main-content -->
+        </div> <!-- End main-content-with-sidebar -->
+    </div> <!-- End container -->
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Printing Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="header-brand">
+                    <h1>Page Printing Application</h1>
+                    <p class="brand-subtitle">Yodlee AIM API Integration</p>
+                </div>
+                <div class="header-actions">
+                    <button id="themeToggle" class="btn-theme-toggle" title="Toggle Dark Mode">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Login Section -->
+        <section id="loginSection" class="section">
+            <h2>Authentication</h2>
+            <form id="loginForm" class="form-container">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required
+                           placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <div class="password-input-container">
+                        <input type="password" id="password" name="password" required
+                               placeholder="Enter your password">
+                        <button type="button" id="togglePassword" class="password-toggle" title="Show password">
+                            👁️
+                        </button>
+                    </div>
+                </div>
+                <div class="form-group checkbox-group">
+                    <label for="rememberMe">
+                        <input type="checkbox" id="rememberMe" name="rememberMe" checked>
+                        Remember my credentials
+                    </label>
+                </div>
+                <button type="submit" class="btn-primary">Login</button>
+            </form>
+            <div id="loginStatus" class="status-message"></div>
+        </section>
+
+        <!-- File Upload Section -->
+        <section id="uploadSection" class="section hidden">
+            <h2>Upload Excel File</h2>
+            <div class="upload-container">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-content">
+                        <svg class="upload-icon" width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" fill="currentColor"/>
+                        </svg>
+                        <p>Drag and drop your Excel file here, or click to browse</p>
+                        <input type="file" id="fileInput" accept=".xlsx,.xls" hidden>
+                        <button id="browseBtn" class="btn-secondary">Browse Files</button>
+                    </div>
+                </div>
+                <div id="fileInfo" class="file-info hidden">
+                    <div class="file-details">
+                        <span id="fileName"></span>
+                        <span id="fileSize"></span>
+                    </div>
+                    <button id="uploadBtn" class="btn-primary">Upload & Process</button>
+                    <button id="cancelUpload" class="btn-secondary">Cancel</button>
+                </div>
+            </div>
+            <div id="uploadStatus" class="status-message"></div>
+
+            <h3>View Users by Site ID</h3>
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="siteId">Site ID:</label>
+                    <input type="text" id="siteId" placeholder="Enter site ID (e.g., 21312)">
+                    <button id="viewUsersBtn" class="btn-secondary">View Users</button>
+                </div>
+            </div>
+            <div id="usersStatus" class="status-message"></div>
+            <div id="usersContainer" class="results-container"></div>
+        </section>
+
+        <!-- Progress Section -->
+        <section id="progressSection" class="section hidden">
+            <h2>Processing Status</h2>
+            <div class="progress-container">
+                <div class="progress-step" id="step1">
+                    <div class="step-indicator pending">1</div>
+                    <div class="step-content">
+                        <h3>File Upload</h3>
+                        <p>Uploading Excel file to server...</p>
+                    </div>
+                </div>
+                <div class="progress-step" id="step2">
+                    <div class="step-indicator pending">2</div>
+                    <div class="step-content">
+                        <h3>Data Processing</h3>
+                        <p>Processing uploaded data...</p>
+                    </div>
+                </div>
+                <div class="progress-step" id="step3">
+                    <div class="step-indicator pending">3</div>
+                    <div class="step-content">
+                        <h3>Publishing</h3>
+                        <p>Publishing to gatherer service...</p>
+                    </div>
+                </div>
+            </div>
+            <div id="overallStatus" class="status-message"></div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="resultsSection" class="section hidden">
+            <h2>Results</h2>
+            <div id="resultsContainer" class="results-container">
+                <!-- Results will be displayed here -->
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

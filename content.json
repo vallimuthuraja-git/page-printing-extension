@@ -1,0 +1,164 @@
+[
+    {
+        "agentName": "NationalBankCAInvestments_21478",
+        "items": [
+            {
+                "itemMsg": "Success:",
+                "segmentCount": "1",
+                "itemId": "88959393",
+                "dbName": "sdbcab02",
+                "feature": "PFM",
+                "segmentId": "35cd4380-802b-49f1-9865-f1467382998e_88959393_PFM",
+                "route": "JDAP",
+                "cobrandId": "5610008380",
+                "pages": [],
+                "receivedResponses": [],
+                "uarFailureCount": 0,
+                "dqStatus": "INIT",
+                "dqErrorMsg": "INIT",
+                "bugStatus": "",
+                "variationType": [
+                    "LOCATOR"
+                ]
+            },
+            {
+                "status": "402",
+                "itemMsg": "Success:",
+                "containerVersion": "90402692",
+                "baseVersion": "f969e482",
+                "segmentCount": "1",
+                "itemId": "19597534",
+                "dbName": "sdbcbi09",
+                "feature": "PFM",
+                "segmentId": "PB-d0f2c4166917225c6898807f1c7f3a077f928e2c",
+                "memSiteAccId": "21339844",
+                "dumpLink": "https://regional-firemem-xydq-prod-ca-central-1-firemem.yodleedna.com?id=dumps/magical-dog-cacentral1-gatherer-blue-65cbc4fc87-k2nl7.2025.10.22.02.42.18.193.0_INSTANT_stocks.html&dbName=sdbcbi09&cobrandID=50005095&itemID=19597534&itemType=CII",
+                "route": "AIM",
+                "pages": [
+                    {
+                        "htmlFilePath": "aim/api/view/html/NationalBankCAInvestments_19597534_PFM/1.html",
+                        "type": "html",
+                        "stateInfoList": [
+                            {
+                                "stateName": "LOGIN",
+                                "stateId": "BASE_LOGIN_1",
+                                "pageData": null,
+                                "pageDataId": null
+                            }
+                        ],
+                        "pageHash": "-323760340",
+                        "jsRemoverHtmlFilePath": "aim/api/view/html/NationalBankCAInvestments_19597534_PFM/1.jsremoved.html",
+                        "aiCompleted": false,
+                        "pageIndex": 1
+                    },
+                    {
+                        "htmlFilePath": "aim/api/view/html/NationalBankCAInvestments_19597534_PFM/2.html",
+                        "type": "html",
+                        "stateInfoList": [],
+                        "pageHash": "-372793213",
+                        "jsRemoverHtmlFilePath": "aim/api/view/html/NationalBankCAInvestments_19597534_PFM/2.jsremoved.html",
+                        "aiCompleted": false,
+                        "pageIndex": 2
+                    },
+                    {
+                        "htmlFilePath": "aim/api/view/html/NationalBankCAInvestments_19597534_PFM/3.html",
+                        "type": "html",
+                        "stateInfoList": [],
+                        "pageHash": "-1610422509",
+                        "jsRemoverHtmlFilePath": "aim/api/view/html/NationalBankCAInvestments_19597534_PFM/3.jsremoved.html",
+                        "aiCompleted": false,
+                        "pageIndex": 3
+                    }
+                ],
+                "siteConfigError": {
+                    "missingAcctsMap": null,
+                    "duplicateTransMap": null,
+                    "missingTrasnMap": null,
+                    "missingHoldingsMap": null,
+                    "duplicateAcctsMap": null,
+                    "acctTypeMap": null,
+                    "currencyTypeMap": null,
+                    "errorInfoMap": null,
+                    "uuid": "8ca4fc41-60e8-4041-8ddc-52c47610c7d4",
+                    "exceptionMsg": "Identified errorMessage from header text:[The user ID or password you entered is incorrect. Please try again.]",
+                    "siteId": "21478",
+                    "responseXML": null,
+                    "requestXML": null,
+                    "scriptVersion": "90402692",
+                    "baseScriptVersion": "f969e482",
+                    "className": "NationalBankCAInvestments_21478",
+                    "baseClassName": "NationalBankCABase_21478",
+                    "errorCode": 402,
+                    "exceptionName": "LoginException",
+                    "cause": null,
+                    "errorResolutions": [
+                        {
+                            "exceptionName": "LoginException",
+                            "exceptionMessage": "Identified errorMessage from header text:[The user ID or password you entered is incorrect. Please try again.]",
+                            "cause": "-Please check if the user has entered incorrect credentials \n -Please check if we are using the correct locator for setting the login metafields \n -If end site is asking for any MFA inputs, check if we are using the correct locator for the security answer/OTP/Captcha",
+                            "accountIndex": null,
+                            "errorFields": [
+                                {
+                                    "fieldName": null,
+                                    "uuid": "8ca4fc41-60e8-4041-8ddc-52c47610c7d4",
+                                    "stateId": "BASE_ACCOUNT_SUMMARY_1",
+                                    "stateName": null,
+                                    "pageIndex": 3,
+                                    "resolutionList": [
+                                        "1.Please check if the error message is handled correctly or not.",
+                                        "2.Communicate to CS team to request the user to login on the end site and get confirmation if there is any change in credentials. If yes, user needs to update the credentials on Yodlee application."
+                                    ],
+                                    "fieldsToBeHighlighted": [],
+                                    "affectedStatesList": []
+                                }
+                            ]
+                        }
+                    ],
+                    "cacheItemId": "19597534",
+                    "memSiteAccountId": null,
+                    "suminfoId": "28142",
+                    "cobrandId": "99",
+                    "siteName": "NationalBankIndependentNetworkMyPortfolioCanada",
+                    "tagName": "stocks",
+                    "errorPageIndex": 0,
+                    "stateID": "BASE_ACCOUNT_SUMMARY_1",
+                    "stateName": "ACCOUNT_SUMMARY",
+                    "exceptionStack": null,
+                    "srcElementId": null,
+                    "scriptLatency": null,
+                    "loginFieldLocatorFound": false,
+                    "isLogoutLocatorFound": false,
+                    "numNavigations": null
+                },
+                "responseXml": "<results>\n<auxinfo>\n    <servertype>I</servertype>\n    <refreshMode>update</refreshMode>\n    <refreshSourceIp>172.17.15.94:3</refreshSourceIp>\n    <appReqId>31b5efb5-4752-460b-9d0e-7de502f0cfb3</appReqId>\n    <refreshRoute>DAP_CLOUD</refreshRoute>\n    <messageUse>instant</messageUse>\n    <database_id>fmemdb011</database_id>\n    <cobrandId>99</cobrandId>\n    <siteId>21478</siteId>\n    <messageSource>IBMQ</messageSource>\n    <isOauthRefreshRequest>false</isOauthRefreshRequest>\n    <sourceCobrandId>50005095</sourceCobrandId>\n    <sourceDatabaseId>sdbcbi09</sourceDatabaseId>\n    <uniqueTrackingId>d1761126127944p3A94E000000NLbRx</uniqueTrackingId>    <gathReqReceviedTime>1761126128</gathReqReceviedTime>\n    <agentLoginTime />\n    <mfaAgentLoginTime />\n        <mfaGathererResponseSentTime />\n    <mfaGathUsrRespRecTime />\n    <mfaWasUserRespReceived>0</mfaWasUserRespReceived>\n    <prevAgentLogoutLatency>3534</prevAgentLogoutLatency>\n    <gathererCleanupLatency>841174</gathererCleanupLatency>\n    <prevRefreshSumInfoID>28142</prevRefreshSumInfoID>\n    <gathSentResponseTime>1761126138</gathSentResponseTime>\n<plogUID>19a0a686d11-b926d-18</plogUID> </auxinfo>\n<gatherer_ip>firemem-prod-dev:magical-dog-cacentral1-gatherer-blue-65cbc4fc87-k2nl7</gatherer_ip>\n<scriptLatency>9406</scriptLatency>\n<serverLatency>841029</serverLatency>\n<reqSinceStartup>4</reqSinceStartup>\n<gathererRobotId>0</gathererRobotId>\n<scriptVersion>90402692</scriptVersion>\n<baseScriptVersion>f969e482</baseScriptVersion>\n<scriptName>NationalBankCAInvestments.json</scriptName>\n<baseScriptName>NationalBankCABase_21478.json</baseScriptName>\n<documentDumpFile>magical-dog-cacentral1-gatherer-blue-65cbc4fc87-k2nl7.2025.10.22.02.42.18.193.0_INSTANT_stocks.html</documentDumpFile>\n<encrypt>\n<method>0</method>\n</encrypt>\n<userList>\n<user id=\"22825370\">\n<actions>\n        <action>refresh</action>\n      </actions>\n<itemList>\n<item id=\"19597534\">\n<auxinfo>\n            <sumInfoId>28142</sumInfoId>\n            <transaction_id>DCqbmNoGZNWOGOheKtC0dsUkOt0lk=</transaction_id>\n            <is_held_retry>false</is_held_retry>\n            <is_ssaa_loginonly_refresh>false</is_ssaa_loginonly_refresh>\n            <is_subsequent_loginonly_refresh>false</is_subsequent_loginonly_refresh>\n          </auxinfo>\n<tag>stocks</tag>\n<originalContentEncoding>UNDEFINED</originalContentEncoding>\n<transactionId>DCqbmNoGZNWOGOheKtC0dsUkOt0lk=</transactionId>\n<incrementalRefresh>false</incrementalRefresh>\n<allDataRefresh>false</allDataRefresh>\n<itemSequence>1</itemSequence>\n<status>402</status>\n<exceptionStackTrace>1600451961|ACCOUNT_SUMMARY|BASE_ACCOUNT_SUMMARY_1|com.yodlee.aim.gatherer.gather.exceptions.LoginException: Identified errorMessage from header text:[The user ID or password you entered is incorrect. Please try again.]\n\tat com.yodlee.aim.gatherer.api.ExceptionChecker.throwException(ExceptionChecker.java:344)\n\tat com.yodlee.aim.gatherer.api.ExceptionChecker.checkExceptionInPageProps(ExceptionChecker.java:322)\n\tat com.yodlee.aim.gatherer.api.ExceptionChecker.checkException(ExceptionChecker.java:249)\n\tat com.yodlee.aim.gatherer.api.ExceptionChecker.checkExceptions(ExceptionChecker.java:177)\n\tat com.yodlee.aim.gatherer.api.ExceptionChecker.checkException(ExceptionChecker.java:104)\n\tat com.yodlee.aim.gatherer.util.VariationHandlerUtil.resetWindowAndFrameDetails(VariationHandlerUtil.java:162)\n\tat com.yodlee.aim.gatherer.util.VariationHandlerUtil.findVariation(VariationHandlerUtil.java:146)\n\tat com.yodlee.aim.gatherer.util.VariationHandlerUtil.handleWaitAndWindowSwitchingForVariationsAndIntermediatePages(VariationHandlerUtil.java:57)\n\tat com.yodlee.aim.gatherer.stateexecutor.WaitAndVerification.isOnPage(WaitAndVerification.java:75)\n\tat com.yodlee.aim.gatherer.stateexecutor.WaitAndVerification.verifyPage(WaitAndVerification.java:119)\n\tat com.yodlee.aim.gatherer.stateexecutor.StateNavigation.process(StateNavigation.java:107)\n\tat com.yodlee.aim.gatherer.stateexecutor.StateHandlerServiceImpl.executeProcessState(StateHandlerServiceImpl.java:235)\n\tat sun.reflect.GeneratedMethodAccessor285.invoke(Unknown Source)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.apache.commons.lang3.reflect.MethodUtils.invokeExactMethod(MethodUtils.java:340)\n\tat org.apache.commons.lang3.reflect.MethodUtils.invokeExactMethod(MethodUtils.java:280)\n\tat com.yodlee.aim.gatherer.stateexecutor.StateHandlerServiceImpl.loopExecutionRules(StateHandlerServiceImpl.java:202)\n\tat com.yodlee.aim.gatherer.stateex</exceptionStackTrace>\n<itemActions />\n<error>com.yodlee.aim.gatherer.gather.exceptions.LoginException: Identified errorMessage from header text:[The user ID or password you entered is incorrect. Please try again.]\n\tat com.yodlee.aim.gatherer.api.ExceptionChecker.throwException(ExceptionChecker.java:344)\n\tat com.yodlee.aim.gatherer.api.ExceptionChecker.checkExceptionInPageProps(ExceptionChecker.java:322)\n\tat com.yodlee.aim.gatherer.api.ExceptionChecker.checkException(ExceptionChecker.java:249)\n\tat com.yodlee.aim.gatherer.api.ExceptionChecker.checkExceptions(ExceptionChecker.java:177)\n\tat com.yodlee.aim.gatherer.api.ExceptionChecker.checkException(ExceptionChecker.java:104)\n\tat com.yodlee.aim.gatherer.util.VariationHandlerUtil.resetWindowAndFrameDetails(VariationHandlerUtil.java:162)\n\tat com.yodlee.aim.gatherer.util.VariationHandlerUtil.findVariation(VariationHandlerUtil.java:146)\n\tat com.yodlee.aim.gatherer.util.VariationHandlerUtil.handleWaitAndWindowSwitchingForVariationsAndIntermediatePages(VariationHandlerUtil.java:57)\n\tat com.yodlee.aim.gatherer.stateexecutor.WaitAndVerification.isOnPage(WaitAndVerification.java:75)\n\tat com.yodlee.aim.gatherer.stateexecutor.WaitAndVerification.verifyPage(WaitAndVerification.java:119)\n\tat com.yodlee.aim.gatherer.stateexecutor.StateNavigation.process(StateNavigation.java:107)\n\tat com.yodlee.aim.gatherer.stateexecutor.StateHandlerServiceImpl.executeProcessState(StateHandlerServiceImpl.java:235)\n\tat sun.reflect.GeneratedMethodAccessor285.invoke(Unknown Source)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.apache.commons.lang3.reflect.MethodUtils.invokeExactMethod(MethodUtils.java:340)\n\tat org.apache.commons.lang3.reflect.MethodUtils.invokeExactMethod(MethodUtils.java:280)\n\tat com.yodlee.aim.gatherer.stateexecutor.StateHandlerServiceImpl.loopExecutionRules(StateHandlerServiceImpl.java:202)\n\tat com.yodlee.aim.gatherer.stateexecutor.StateHandlerServiceImpl.executeExecutionRules(StateHandlerServiceImpl.java:177)\n\tat com.yodlee.aim.gatherer.stateexecutor.StateHandlerServiceImpl.processStates(StateHandlerServiceImpl.java:121)\n\tat com.yodlee.aim.gatherer.stateexecutor.StateInvokeHelper.processState(StateInvokeHelper.java:274)\n\tat com.yodlee.aim.gatherer.stateexecutor.StateInvokeHelper.executeState(StateInvokeHelper.java:190)\n\tat com.yodlee.aim.gatherer.statecomponents.SingleStateStrategy.handleStateExecution(SingleStateStrategy.java:327)\n\tat com.yodlee.aim.gatherer.statecomponents.SingleStateStrategy.executeInternalSections(SingleStateStrategy.java:162)\n\tat com.yodlee.aim.gatherer.statecomponents.SingleStateStrategy.execute(SingleStateStrategy.java:76)\n\tat com.yodlee.aim.gatherer.statecomponents.StateStrategyCtx.execute(StateStrategyCtx.java:16)\n\tat com.yodlee.aim.gatherer.stateexecutor.StateHandler.callSingleStrategy(StateHandler.java:350)\n\tat com.yodlee.aim.gatherer.stateexecutor.StateHandler.callStrategies(StateHandler.java:224)\n\tat com.yodlee.aim.gatherer.stateexecutor.StateHandler.processResponse(StateHandler.java:200)\n\tat com.yodlee.aim.gatherer.stateexecutor.StateHandler.processResponses(StateHandler.java:164)\n\tat com.yodlee.aim.gatherer.stateexecutor.StateHandler.processStates(StateHandler.java:144)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:216)\n\tat org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:201)\n\tat com.yodlee.dap.core.util.AnnotationUtil.invokeMethods(AnnotationUtil.java:349)\n\tat com.yodlee.dap.core.util.AnnotationUtil.lambda$invokeP$0(AnnotationUtil.java:304)\n\tat java.util.Arrays$ArrayList.forEach(Arrays.java:3880)\n\tat com.yodlee.dap.core.util.AnnotationUtil.invokeP(AnnotationUtil.java:301)\n\tat com.yodlee.dap.core.util.AnnotationUtil.invokeClasses(AnnotationUtil.java:278)\n\tat com.yodlee.dap.core.util.AnnotationUtil.invoke(AnnotationUtil.java:180)\n\tat com.yodlee.dap.core.util.AnnotationUtil.invoke(AnnotationUtil.java:145)\n\tat com.yodlee.aim.gatherer.refresh.controllers.AIMRefreshController.execute(AIMRefreshController.java:493)\n\tat com.yodlee.aim.gatherer.refresh.controllers.AIMRefreshController.execute(AIMRefreshController.java:311)\n\tat com.yodlee.aim.gatherer.refresh.controllers.AIMRefreshController.execute(AIMRefreshController.java:212)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)\n\tat org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)\n\tat org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)\n\tat com.sun.proxy.$Proxy156.execute(Unknown Source)\n\tat com.yodlee.dap.core.engine.DefaultRefreshEngineWorker.execute(DefaultRefreshEngineWorker.java:364)\n\tat com.yodlee.dap.core.engine.DefaultRefreshEngineWorker.lambda$processRefresh$0(DefaultRefreshEngineWorker.java:242)\n\tat java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n</error>\n<data>\n</data>\n</item>\n</itemList>\n</user>\n</userList>\n<requestType>Instant</requestType>\n<performanceMetrics>\n  <navigationCPUTime>0</navigationCPUTime>\n  <navigationABSTime>1727</navigationABSTime>\n  <processingCPUTime>1640</processingCPUTime>\n  <processingABSTime>7728</processingABSTime>\n  <maxJVMHeap>-1.000</maxJVMHeap>\n  <minJVMHeap>-1.000</minJVMHeap>\n  <numNavigations>3</numNavigations>\n</performanceMetrics>\n<metricsData>\n  <gathReqReceivedTime>1761126128542</gathReqReceivedTime>\n  <agentLoginTime />\n  <mfaAgentLoginTime />\n  <mfaUserResReceivedTime />\n  <mfaGathResSentTime />\n  <gathResSentTime>1761126138188</gathResSentTime>\n  <refreshStartTime />\n  <reqXmlPostTime />\n  <dcsReqRecTime />\n  <dcsReqGathSentTime />\n</metricsData>\n\n\n\n\n\n</results>",
+                "receivedResponses": [
+                    {
+                        "dump": "https://regional-firemem-xydq-prod-ca-central-1-firemem.yodleedna.com?id=dumps/magical-dog-cacentral1-gatherer-blue-65cbc4fc87-k2nl7.2025.10.22.02.42.18.193.0_INSTANT_stocks.html&dbName=sdbcbi09&cobrandID=50005095&itemID=19597534&itemType=CII",
+                        "fmStatus": 402,
+                        "responseType": "containerResponse",
+                        "containers": [
+                            "stocks"
+                        ]
+                    }
+                ],
+                "bugzillaId": "1872260",
+                "syntheticBugId": "2c721018d3d9f6f2eb1c14b4b104a8b78d5def69",
+                "uarFailureCount": 1,
+                "interfaceType": "AIM",
+                "dqStatus": "INIT",
+                "dqErrorMsg": "INIT",
+                "bugStatus": "",
+                "bugMetadata": {
+                    "errorCode": "0",
+                    "exceptionStackTrace": null,
+                    "baseVersion": "f969e482",
+                    "containerVersion": "90402692"
+                }
+            }
+        ],
+        "containerType": "stocks",
+        "ajaxURLS": [],
+        "isProd": false,
+        "lastUpdate": "2025-10-21T04:17:15.793+0000"
+    }
+]

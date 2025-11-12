@@ -1,0 +1,125 @@
+{
+  "info": {
+    "name": "Page Print Copy",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "12345678"
+  },
+  "item": [
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "Login Auth",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"userName\":\"your_username\",\"password\":\"your_password\"}"
+            },
+            "url": {
+              "raw": "{{base_url}}/login/auth",
+              "host": ["{{base_url}}"],
+              "path": ["login", "auth"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Site Management",
+      "item": [
+        {
+          "name": "Load Sites",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": []
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/pageprint/load/sites",
+              "host": ["{{base_url}}"],
+              "path": ["pageprint", "load", "sites"]
+            }
+          }
+        },
+        {
+          "name": "Publish to Gatherer",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/pageprint/gatherer/json/publish",
+              "host": ["{{base_url}}"],
+              "path": ["pageprint", "gatherer", "json", "publish"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "User Management",
+      "item": [
+        {
+          "name": "Get Users by Site ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/pageprint/getBySiteId/:siteId",
+              "host": ["{{base_url}}"],
+              "path": ["pageprint", "getBySiteId", ":siteId"],
+              "variable": [
+                {
+                  "key": "siteId",
+                  "value": "",
+                  "description": "Site ID (e.g., 21312)"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "https://aim.yodlee.com/aim/api",
+      "type": "string"
+    },
+    {
+      "key": "token",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}

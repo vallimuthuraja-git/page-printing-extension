@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Page Printing Extension",
+  "version": "1.0.0",
+  "description": "Chrome extension for uploading Excel files and processing them through Yodlee AIM API for page printing operations.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Page Printing"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://aim.yodlee.com/*"
+  ]
+}
